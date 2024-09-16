@@ -17,6 +17,45 @@ html,body{
     text-align: center;
     padding: 20px 20px 20px 20px;
 }
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.dropup button{
+    position: absolute;
+    left: 0px;
+    top: 10px;
+    width: 90px;
+    font-size: 16px;
+    padding: 10px;
+    background-color: #faf3f3;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.dropup ul{
+    list-style: none;
+    min-width: 10px;
+    position: absolute;
+    left: 5px;
+    top: 50px;
+    font-size: 14px;
+    line-height: 2;
+    padding: 10px 10px;
+    cursor: pointer;
+    display: none;
+}
+.dropup ul li{
+    border-bottom: 1px solid grey;
+    text-align: left;
+}
+.dropup ul li:hover{
+    background-color: aliceblue;
+    transition: ease 0.5s;
+}
 .container h2{
     font-size: 36px;
     position: relative;
