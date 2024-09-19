@@ -4,9 +4,7 @@ const newBtn = document.getElementById("new");
 const tweet = document.getElementById("tweet");
 const menu = document.getElementById("menu");
 const list = document.getElementById("list");
-
 let selectedCategory = '';
-
 function menuItem(){
     list.style.display="block"; 
 }
@@ -14,10 +12,8 @@ function listItem(e){
     selectedCategory = e.target.textContent;
     menu.textContent = selectedCategory;
     list.style.display="none";
-    
 }
 const api_url = `https://api.api-ninjas.com/v1/quotes?category=${selectedCategory}`;
-
 async function getquote() {
     const response = await fetch(api_url,{
         method:'Get',
@@ -34,11 +30,8 @@ async function getquote() {
         quotes.innerHTML = "No quotes found for this category.";
         authors.innerHTML = "";
     }
-
-
 }
 getquote();
-
 function tweets() {
     window.open("https://twitter.com/intent/tweet?text=" + quotes.innerHTML + " --- by " + authors.innerHTML, "tweet window", "width=600,height=300");
 }
