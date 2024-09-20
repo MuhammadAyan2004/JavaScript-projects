@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    background-color: lightskyblue;
+}
+.container{
+    width: 90%;
+    max-width: 600px;
+    margin: 150px auto 0;
+    padding: 50px 0;
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(images/background.png);
+    background-size:cover;
+    background-position: center;
+    text-align: center;
+    box-shadow: 2px 2px 10px 1px;
+}
+.container h1{
+    color: white;
+    margin-top: 20px;
+    font-size: 64px;
+    font-weight: 300;
+}
+.track{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+.track img{
+    width: 50px;
+    margin: 0 15px;
+    cursor: pointer;
+}
+.track img:nth-child(2){
+    width: 80px;
+}
