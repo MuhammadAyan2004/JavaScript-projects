@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background: url(images/background.png);
+    background-position:center;
+    background-size: cover;
+    padding: 30px 8%;
+    color: white;
+}
+.container img{
+    width: 100px;
+}
+.timer{
+    padding-top:12%;
+}
+.timer p{
+    font-size: 18px;
+}
+.timer .text{
+    font-size: 66px;
+    word-spacing: -10px;
+    padding-top: 10px;
+}
+.text span{
+    color: rgb(255, 78, 33);
+}
+.countdown{
+    padding-top: 10px;
+    display: flex;
+    gap: 35px;
+}
+.countdown div p{
+    font-size: 50px;
+}
+.countdown div {
+    flex-basis: 70px;
+}
+button{
+    margin-top: 20px;
+    padding: 10px 0px 10px 15px;
+    width: 11vw;
+    text-align: left;
+    background: transparent;
+    font-size: 16px;
+    color: #fff;
+    border: 1px solid #fff;
+    cursor: pointer;
+    position: relative;
+}
+button #img {
+    position: absolute;
+    top: 25%;
+    right: 30px;
+    width: 15px;
+}
+.container .rocket{
+    width: 200px;
+    position: absolute;
+    right: 10%;
+    bottom: 0px;
+    animation: rocket 3s linear infinite;
+}
+@keyframes rocket {
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    100%{
+        bottom: 105%;
+        opacity: 1;
+    }
+}
