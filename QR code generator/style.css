@@ -69,22 +69,10 @@ button:hover{
     animation: shake 0.1s linear 10;
     border: 1px solid red;
 }
-
 @keyframes shake {
-    0%{
-        transform: translateX(0);
-    }
-    25%{
-        transform: translateX(-4px);
-        
-    }
-    50%{
-        transform: translateX(0);
-    }
-    75%{
-        transform: translateX(4);
-    }
-    100%{
-        transform: translateX(0);
-    }
+    0%{transform: translateX(0);}
+    25%{transform:translateX(-4px);}
+    50%{transform:translateX(0);}
+    75%{transform:translateX(4);}
+    100%{transform:translateX(0);}
 }
