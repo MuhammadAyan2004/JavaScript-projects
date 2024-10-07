@@ -38,8 +38,7 @@ html,body{
     box-shadow: 0 0 2 rgba(0, 0, 0, 0.3);
     display: flex;
     align-items: center;
-    font-size: 
-    20px;
+    font-size:20px;
     position: relative;
 }
 .toast i {
@@ -79,4 +78,3 @@ html,body{
 .toast.invalid::after {
     background-color: rgb(255, 187, 0);
 }
-
