@@ -1,22 +1,11 @@
-let gola1 =document.getElementById("gola1")
-let gola2 =document.getElementById("gola2")
-let gola3 =document.getElementById("gola3")
-let img =document.getElementById("img")
+let golas = [document.getElementById("gola1"),document.getElementById("gola2"),document.getElementById("gola3")]
+let img =document.getElementById("img");
+let images = ["image1.png","image2.png","image3.png"];
 
-gola1.addEventListener("click",()=>{
-    gola2.style.backgroundColor = "grey";
-    gola3.style.backgroundColor = "grey";
-    img.src = "image1.png";
-})
-gola2.addEventListener("click",()=>{
-    gola2.style.backgroundColor = "blue";
-    gola1.style.backgroundColor = "grey";
-    gola3.style.backgroundColor = "grey";
-    img.src = "image2.png";
-})
-gola3.addEventListener("click",()=>{
-    gola1.style.backgroundColor = "grey";
-    gola2.style.backgroundColor = "grey";
-    gola3.style.backgroundColor = "blue";
-    img.src = "image3.png";
+golas.forEach((gola , index)=>{
+    gola.addEventListener("click",()=>{
+        golas.forEach(g => g.style.backgroundColor = "grey");
+        gola.style.backgroundColor = "blue";
+        img.src = images[index]
+    })
 })
