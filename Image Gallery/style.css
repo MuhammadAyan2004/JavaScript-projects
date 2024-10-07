@@ -8,6 +8,13 @@ html,body{
     height: 100%;
     background-color: darkslategray;
 }
+.galleryWrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+    gap:50px;
+}
 .container{
     width: 150vh;
     display: flex;
@@ -19,7 +26,7 @@ html,body{
 .container div{
     width: 100%;
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr ;
     grid-gap: 20px;
     padding: 10px;
     flex: none;
@@ -33,7 +40,6 @@ html,body{
     filter: grayscale(0);
     cursor: pointer;
     transform: scale(1.1);
-
 }
 #backbtn{
     width: 50px;
@@ -42,11 +48,4 @@ html,body{
 #nextbtn{
     width: 50px;
     cursor: pointer;
-}
-.galleryWrap{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 100px ;
-    gap:10px;
 }
