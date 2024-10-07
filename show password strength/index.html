@@ -20,22 +20,19 @@
         let str = document.getElementById("strenght");
 
         pass.addEventListener("input",()=>{
-            if(pass.value.length > 0){
+            if(pass.value.length <= 4 && pass.value.length > 0){
                 msg.style.display = "block";
-            }else{
-                msg.style.display = "none";
-                str.innerHTML = "";
-                pass.style.borderColor = "";
-            }if(pass.value.length <= 4 && pass.value.length > 0){
                 str.innerHTML = "weak";
                 str.style.color = "red"
                 pass.style.borderColor = "red";
             }else if(pass.value.length >= 5 &&pass.value.length < 8){
+                msg.style.display = "block";
                 str.innerHTML = "medium";
                 str.style.color = "yellow"
                 pass.style.borderColor = "yellow";
             }else if(pass.value.length >= 8 &&pass.value.length < 16){
-                str.innerHTML = "medium";
+                msg.style.display = "block";
+                str.innerHTML = "Strong";
                 str.style.color = "green"
                 pass.style.borderColor = "green";
             }
