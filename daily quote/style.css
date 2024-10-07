@@ -9,8 +9,8 @@ html,body{
     background: rgb(98, 28, 211);
 }
 .container{
-    width: 100vh;
-    max-height: 70vh;
+    width: 130vh;
+    min-height: 70vh;
     background-color: rgb(236, 236, 236);
     margin: 100px auto;
     border-radius: 10px;
@@ -30,31 +30,34 @@ html,body{
     width: 90px;
     font-size: 16px;
     padding: 10px;
-    background-color: #faf3f3;
-    border: 1px solid black;
+    color: white;
+    background-color: #4CAF50;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.5);
+    border:none;
     outline: none;
     border-radius: 10px;
     cursor: pointer;
 }
-.dropup ul{
+.dropup #list{
     list-style: none;
-    min-width: 10px;
+    width: 95px;
     position: absolute;
-    left: 5px;
-    top: 50px;
-    font-size: 14px;
+    left: 0px;
+    top: 49px;
+    font-size: 16px;
+    background-color: #f9f9f9;
     line-height: 2;
-    padding: 10px 10px;
+    padding: 10px;
     cursor: pointer;
     display: none;
+    border-radius:10px;
 }
-.dropup ul li{
-    border-bottom: 1px solid grey;
+.dropup #list #li{
     text-align: left;
+    transition: background-color 0.2s ease;
 }
-.dropup ul li:hover{
-    background-color: aliceblue;
-    transition: ease 0.5s;
+.dropup #list #li:hover{
+    background-color:  #e7e5e5;
 }
 .container h2{
     font-size: 36px;
