@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    width:100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    background-color: darkblue;
+}
+.con{
+    width: 600px;
+}
+button{
+    cursor: pointer;
+}
+.ola{
+    width: 500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+li{
+    padding: 10px;
+    width: 98%;
+    min-height: 50px;
+    position: relative;
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    background-color: white;
+    border-radius: 20px;
+}
+p{
+    width: 300px;
+}
+.del-btn{
+    color: red;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.edit-btn{
+    color: green;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background: transparent;
+}
